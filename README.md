@@ -1,4 +1,7 @@
-# Led-control-using-Arduino
+### NAME : Subikshan P
+### REG.NO : 212223240161
+
+#  EX-NO : 1    Led-control-using-Arduino
 
 ## AIM
 To design and implement a system for LED control using an Arduino microcontroller and a push button.
@@ -57,10 +60,43 @@ Security System Indicator </br>
 Emergency Signaling System </br>
 Weighing Machines </br>
 
-## CIRCUIT DIAGRAM
+## CIRCUIT DIAGRAM:
+![ex1_page-0001](https://github.com/user-attachments/assets/290f0c4b-6e8e-4d8a-bda6-814aac29f8ae)
 
-## PROGRAM
 
-## OUTPUT
 
-## RESULT
+## PROGRAM:
+```
+void setup() {
+  pinMode(12,OUTPUT);
+  pinMode(4,INPUT);
+}
+
+void loop() {
+  int button_status=digitalRead(4);
+  if (button_status==HIGH)
+  {
+    digitalWrite(12,HIGH);
+    delay(1000);
+    digitalWrite(12,LOW);
+    delay(1000);
+  }
+  else
+  {
+    digitalWrite(12,LOW);
+  }
+
+}
+```
+
+
+## OUTPUT:
+<img width="1773" height="973" alt="Screenshot 2025-08-19 114345" src="https://github.com/user-attachments/assets/96b0a2cc-44a5-4611-8cf2-bb890c927ef9" />
+
+<img width="1799" height="992" alt="Screenshot 2025-08-19 113853" src="https://github.com/user-attachments/assets/7045142e-3185-4770-a25e-2650ac5d60e1" />
+
+
+
+
+## RESULT:
+Thus, too design and implement a system for LED control using an Arduino microcontroller and a push button has completed and verified successfully.
